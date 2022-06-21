@@ -30,3 +30,9 @@ list.addEventListener('click', (e) => {
         }
     }
 })
+list.addEventListener('click', (e) => {
+  if(e.target.classList.contains('item__delete')){
+    let item = e.target.closest('.item');
+    item.remove();
+  }
+})
