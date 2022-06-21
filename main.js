@@ -12,6 +12,7 @@ addButton.addEventListener('click', (e)=>{
             <input type="checkbox" class="item__checkbox">
             <div class="item__text">${value}</div>
             </div>
+            <div class="item__delete"></div>
         </div>
         `);
         input.value = '';
