@@ -25,10 +25,9 @@
 }
 .todo-list__add {
     display: inline-block;
-    width: 100%;
+    width: 80%;
     height: 20px;
     padding: 15px 10px;
-    margin-bottom: 30px;
 }
 .todo-list__item {
     display: flex;
@@ -69,9 +68,10 @@
     max-width: 530px;
 }
 .todo-list__buttons {
-    padding: 15px 10px 0px;
+    padding: 15px 10px;
     display: flex;
     justify-content: center;
+    background-color: #fafafa;
 }
 .todo-list__button {
     padding: 10px 15px;
@@ -83,4 +83,14 @@
 }
 .todo-list__button:hover {
     background-color: rgb(59, 32, 209);
+}
+
+.todo-list__add-form {
+    display: flex;
+    margin-bottom: 30px;
+}
+.todo-list__button_add {
+    margin-left: 10px;
+    padding: 0px 10px;
+    white-space: nowrap;
 }

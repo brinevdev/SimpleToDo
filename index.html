@@ -14,7 +14,10 @@
             ToDo list
         </div>
         <div class="todo-list__body">
-            <input type="text" class="todo-list__add" placeholder="type your task">
+            <div class="todo-list__add-form">
+                <input type="text" class="todo-list__add" placeholder="type your task">
+                <button class="todo-list__button todo-list__button_add">Create new task</button>
+            </div>
             <div class="todo-list__item item">
                 <div class="item__task">
                     <input type="checkbox" class="item__checkbox">
@@ -36,11 +39,10 @@
                 </div>
                 <div class="item__delete"></div>
             </div>
-            <div class="todo-list__buttons">
-                <button class="todo-list__button">Clear all</button>
-            </div>
         </div>
-
+        <div class="todo-list__buttons">
+            <button class="todo-list__button">Clear all</button>
+        </div>
     </div>  
 </body>
 </html>
