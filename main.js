@@ -1,6 +1,7 @@
 const list = document.querySelector('.todo-list__body');
 const input = document.querySelector('.todo-list__add');
 const addButton = document.querySelector('.todo-list__button_add');
+const clearAllButton = document.querySelector('.todo-list__button_clear');
 
 
 addButton.addEventListener('click', (e)=>{
@@ -30,9 +31,15 @@ list.addEventListener('click', (e) => {
         }
     }
 })
+
 list.addEventListener('click', (e) => {
   if(e.target.classList.contains('item__delete')){
     let item = e.target.closest('.item');
     item.remove();
   }
 })
+
+clearAllButton.addEventListener('click', (e)=> {
+    let allTask = list.querySelectorAll('.item');
+    allTask.forEach((task)=>task.remove());
+});
